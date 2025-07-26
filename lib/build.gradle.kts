@@ -1,20 +1,25 @@
 plugins {
     kotlin("jvm") version "1.9.0"
     `java-library`
+    `maven-publish`
 }
 
 group = "com.github.Sedose"
-version = "1.0.0"
+version = "1.0.2"
 
 repositories {
     mavenCentral()
 }
 
-tasks.register<Jar>("sourcesJar") {
-    archiveClassifier.set("sources")
-    from(sourceSets.main.get().allSource)
+java {
+    withSourcesJar()
 }
 
-artifacts {
-    add("archives", tasks["sourcesJar"])
+publishing {
+    publications {
+        create<MavenPublication>("kream") {
+            from(components["java"])
+            artifactId = "Kream"
+        }
+    }
 }
