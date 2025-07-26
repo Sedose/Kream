@@ -3,12 +3,18 @@ plugins {
     `java-library`
 }
 
-group = "com.github.Sedose" // ← Replace with your actual GitHub username
+group = "com.github.Sedose"
 version = "1.0.0"
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
+tasks.register<Jar>("sourcesJar") {
+    archiveClassifier.set("sources")
+    from(sourceSets.main.get().allSource)
+}
+
+artifacts {
+    add("archives", tasks["sourcesJar"])
 }
