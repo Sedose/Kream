@@ -23,7 +23,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.Sedose:Kream:1.0.3")
+    implementation("com.github.Sedose:Kream:1.0.4")
 }
 ```
 
@@ -35,7 +35,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.Sedose:Kream:1.0.3'
+    implementation 'com.github.Sedose:Kream:1.0.4'
 }
 ```
 
@@ -53,7 +53,7 @@ dependencies {
     <dependency>
         <groupId>com.github.Sedose</groupId>
         <artifactId>Kream</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
     </dependency>
 </dependencies>
 ```
