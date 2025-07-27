@@ -3,8 +3,6 @@
 ## Issues with Current Gradle Setup
 
 ### 1. Publishing Configuration Issues
-- Incomplete POM metadata (no description, URL, licenses, developers)
-- Package name (`io.kream`) doesn't match group ID (`com.github.sedose`)
 - No signing configuration for artifacts
 - Only configured for Jitpack, not Maven Central
 
