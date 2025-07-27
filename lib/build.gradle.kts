@@ -4,7 +4,7 @@ plugins {
     `maven-publish`
 }
 
-group = "com.github.Sedose"
+group = "com.github.sedose"
 version = "1.0.4"
 
 repositories {
@@ -28,9 +28,9 @@ publishing {
             from(components["java"])
 
             pom {
-                name.set("Kream")
+                name.set("kream")
                 description.set("A Kotlin library for redirecting standard output and error streams")
-                url.set("https://github.com/Sedose/Kream")
+                url.set("https://github.com/sedose/kream")
                 licenses {
                     license {
                         name.set("MIT License")
@@ -39,15 +39,15 @@ publishing {
                 }
                 developers {
                     developer {
-                        id.set("Sedose")
-                        name.set("Sedose")
+                        id.set("sedose")
+                        name.set("sedose")
                         email.set("your.email@example.com")
                     }
                 }
                 scm {
-                    connection.set("scm:git:git://github.com/Sedose/Kream.git")
-                    developerConnection.set("scm:git:ssh://github.com/Sedose/Kream.git")
-                    url.set("https://github.com/Sedose/Kream")
+                    connection.set("scm:git:git://github.com/sedose/kream.git")
+                    developerConnection.set("scm:git:ssh://github.com/sedose/kream.git")
+                    url.set("https://github.com/sedose/kream")
                 }
             }
         }

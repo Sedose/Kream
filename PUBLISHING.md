@@ -35,7 +35,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.Sedose:Kream:1.0.4")
+    implementation("com.github.sedose:kream:1.0.4")
 }
 ```
 
@@ -47,7 +47,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.Sedose:Kream:1.0.4'
+    implementation 'com.github.sedose:kream:1.0.4'
 }
 ```
 
@@ -63,8 +63,8 @@ dependencies {
 
 <dependencies>
     <dependency>
-        <groupId>com.github.Sedose</groupId>
-        <artifactId>Kream</artifactId>
+        <groupId>com.github.sedose</groupId>
+        <artifactId>kream</artifactId>
         <version>1.0.4</version>
     </dependency>
 </dependencies>
@@ -83,6 +83,6 @@ To view the sources in IntelliJ IDEA:
 ## Verifying the Release
 
 To verify that the new version is available on Jitpack.io, visit:
-https://jitpack.io/#com.github.Sedose/Kream/1.0.4
+https://jitpack.io/#com.github.sedose/kream/1.0.4
 
 Note that Jitpack.io builds the library on-demand when it's first requested, so there might be a short delay when accessing a new version for the first time.

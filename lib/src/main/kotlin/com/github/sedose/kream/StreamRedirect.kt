@@ -1,4 +1,4 @@
-package com.github.Sedose.kream
+package com.github.sedose.kream
 
 import java.io.PrintStream
 import java.nio.file.Files
@@ -31,28 +31,20 @@ import java.nio.file.Path
  * @throws IOException If there is an error opening or writing to the specified files
  * @throws SecurityException If a security manager exists and its checkWrite method denies write access to the files
  */
-public fun withRedirects(
+fun withRedirects(
     stdout: Path?,
     stderr: Path?,
     action: () -> Unit,
 ) {
-    // Store original streams
     val originalOut = System.out
     val originalErr = System.err
-    
-    // Create redirected streams if paths are provided
     val redirectedOut = stdout?.let { PrintStream(Files.newOutputStream(it)) }
     val redirectedErr = stderr?.let { PrintStream(Files.newOutputStream(it)) }
-
-    // Apply redirections
     redirectedOut?.let(System::setOut)
     redirectedErr?.let(System::setErr)
-
     try {
-        // Execute the provided action with redirected streams
         action()
     } finally {
-        // Restore original streams and close redirected streams
         redirectedOut?.close()
         redirectedErr?.close()
         System.setOut(originalOut)

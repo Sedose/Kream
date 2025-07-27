@@ -2,7 +2,7 @@
 
 A lightweight Kotlin library for redirecting standard output and error streams to files.
 
-[![](https://jitpack.io/v/com.github.Sedose/Kream.svg)](https://jitpack.io/#com.github.Sedose/Kream)
+[![](https://jitpack.io/v/com.github.sedose/kream.svg)](https://jitpack.io/#com.github.sedose/kream)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
@@ -23,7 +23,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.Sedose:Kream:1.0.4")
+    implementation("com.github.sedose:kream:1.0.4")
 }
 ```
 
@@ -35,7 +35,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.Sedose:Kream:1.0.4'
+    implementation 'com.github.sedose:kream:1.0.4'
 }
 ```
 
@@ -51,8 +51,8 @@ dependencies {
 
 <dependencies>
     <dependency>
-        <groupId>com.github.Sedose</groupId>
-        <artifactId>Kream</artifactId>
+        <groupId>com.github.sedose</groupId>
+        <artifactId>kream</artifactId>
         <version>1.0.4</version>
     </dependency>
 </dependencies>
@@ -63,7 +63,7 @@ dependencies {
 ### Basic Example
 
 ```kotlin
-import com.github.Sedose.kream.withRedirects
+import com.github.sedose.kream.withRedirects
 import java.nio.file.Paths
 
 fun main() {

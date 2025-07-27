@@ -4,7 +4,7 @@
 
 ### 1. Publishing Configuration Issues
 - Incomplete POM metadata (no description, URL, licenses, developers)
-- Package name (`io.kream`) doesn't match group ID (`com.github.Sedose`)
+- Package name (`io.kream`) doesn't match group ID (`com.github.sedose`)
 - No signing configuration for artifacts
 - Only configured for Jitpack, not Maven Central
 
@@ -94,9 +94,9 @@ publishing {
             from(components["java"])
             
             pom {
-                name.set("Kream")
+                name.set("kream")
                 description.set("A Kotlin library for redirecting standard output and error streams")
-                url.set("https://github.com/Sedose/Kream")
+                url.set("https://github.com/sedose/kream")
                 licenses { /* ... */ }
                 developers { /* ... */ }
                 scm { /* ... */ }
@@ -118,7 +118,7 @@ kotlin.js.compiler=ir
 
 # Project metadata
 projectDescription=A Kotlin library for redirecting standard output and error streams
-projectUrl=https://github.com/Sedose/Kream
+projectUrl=https://github.com/sedose/kream
 ```
 
 ### gradle/libs.versions.toml
